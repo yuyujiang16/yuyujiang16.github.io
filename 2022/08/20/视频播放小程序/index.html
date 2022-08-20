@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="天气查询小程序, 鱼鱼酱的小窝">
+    <meta name="keywords" content="视频播放小程序, 鱼鱼酱的小窝">
     <meta name="description" content="2022年夏季《移动软件开发》实验报告姓名：任嘉怡  学号：20020007058
 
 
@@ -20,7 +20,7 @@
 
 
 实验名称？
-实验2：天气查询小程序">
+实验3：视频播放小程序">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -32,7 +32,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>天气查询小程序 | 鱼鱼酱的小窝</title>
+    <title>视频播放小程序 | 鱼鱼酱的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -349,12 +349,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">天气查询小程序</h1>
+                    <h1 class="description center-align post-title">视频播放小程序</h1>
                 </div>
             </div>
         </div>
@@ -390,7 +390,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-08-17
+                    2022-08-20
                 </div>
                 
 
@@ -426,7 +426,7 @@
 </tr>
 <tr>
 <td>实验名称？</td>
-<td>实验2：天气查询小程序</td>
+<td>实验3：视频播放小程序</td>
 </tr>
 <tr>
 <td>博客地址？</td>
@@ -434,21 +434,18 @@
 </tr>
 <tr>
 <td>Github仓库地址？</td>
-<td><a target="_blank" rel="noopener" href="https://github.com/yuyujiang16/weather-.git">https://github.com/yuyujiang16/weather-.git</a></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/yuyujiang16/videoDemo.git">https://github.com/yuyujiang16/videoDemo.git</a></td>
 </tr>
 </tbody></table>
 <p>（备注：将实验报告发布在博客、代码公开至 github 是 <strong>加分项</strong>，不是必须做的）</p>
-<p>(代码公开至github:<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817221811338.png" alt="image-20220817221811338" style="zoom:50%;" />)</p>
-<h2 id="一、实验目标"><a href="#一、实验目标" class="headerlink" title="一、实验目标"></a><strong>一、实验目标</strong></h2><p>1、掌握服务器域名配置和临时服务器部署；</p>
-<p>2、掌握 wx.request 接口的用法。</p>
-<h2 id="二、实验步骤"><a href="#二、实验步骤" class="headerlink" title="二、实验步骤"></a>二、实验步骤</h2><h4 id="一-准备工作"><a href="#一-准备工作" class="headerlink" title="一.准备工作"></a><strong>一.准备工作</strong></h4><h5 id="1-API密钥申请"><a href="#1-API密钥申请" class="headerlink" title="1.API密钥申请"></a>1.API密钥申请</h5><p>​	进入官网注册用户，打开控制台，在应用管理中申请应用，然后得到key。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817163650798.png" alt="image-20220817163650798" style="zoom: 33%;" />
+<p>（代码公开至github:<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820102824312.png" alt="image-20220820102824312" style="zoom: 25%;" />)</p>
+<h2 id="一、实验目标"><a href="#一、实验目标" class="headerlink" title="一、实验目标"></a><strong>一、实验目标</strong></h2><p>1、掌握视频列表的切换方法；</p>
+<p>2、掌握视频自动播放方法；</p>
+<p>3、掌握视频随机颜色弹幕效果。</p>
+<h2 id="二、实验步骤"><a href="#二、实验步骤" class="headerlink" title="二、实验步骤"></a>二、实验步骤</h2><h4 id="一-项目创建"><a href="#一-项目创建" class="headerlink" title="一.项目创建"></a>一.项目创建</h4><p>​	创建项目videoDemo。</p>
+<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820091902806.png" alt="image-20220820091902806" style="zoom:33%;" />
 
-<h5 id="2-API调用方法"><a href="#2-API调用方法" class="headerlink" title="2.API调用方法"></a>2.API调用方法</h5><p>​	用户可调用接口地址“<a target="_blank" rel="noopener" href="https://free-api.heweather.com/s6/&#39;&#39;">https://free-api.heweather.com/s6/&#39;&#39;</a></p>
-<h5 id="3-服务器域名配置"><a href="#3-服务器域名配置" class="headerlink" title="3.服务器域名配置"></a>3.服务器域名配置</h5><p>​	在登录小程序管理后进入后台，在”开发设置“的”服务器域名“栏中添加域名地址”<a target="_blank" rel="noopener" href="https://free-api.heweather.com“,将其添加到”request合法域名“./">https://free-api.heweather.com“，将其添加到”request合法域名“。</a></p>
-<h4 id="二-项目创建"><a href="#二-项目创建" class="headerlink" title="二.项目创建"></a>二.项目创建</h4><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817164244956.png" alt="image-20220817164244956" style="zoom: 33%;" />
-
-<h4 id="三-页面配置"><a href="#三-页面配置" class="headerlink" title="三.页面配置"></a>三.页面配置</h4><ul>
+<h4 id="二-页面配置"><a href="#二-页面配置" class="headerlink" title="二.页面配置"></a>二.页面配置</h4><ul>
 <li><p>创建页面文件</p>
 <p>​	将app.json文件中pages属性中“pages&#x2F;logs&#x2F;logs”和上一行末尾逗号删除，保存修改。</p>
 <img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105657487.png" alt="image-20220817105657487" style="zoom: 67%;" />
@@ -463,84 +460,81 @@
 <img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105806177.png" alt="image-20220817105806177" style="zoom:33%;" />
 </li>
 <li><p>创建其他文件</p>
-<p>​	创建images文件夹用于存放天气图标素材，即群里的压缩包解压后加入此项目中。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817164649575.png" alt="image-20220817164649575" style="zoom:50%;" /></li>
+<p>​	创建images文件夹用于存放播放图标，即文档中的压缩包解压后加入此项目中。<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820091957610.png" alt="image-20220820091957610" style="zoom:50%;" /></p>
+</li>
 </ul>
-<h4 id="四-视图设计"><a href="#四-视图设计" class="headerlink" title="四.视图设计"></a>四.视图设计</h4><ul>
+<h4 id="三-视图设计"><a href="#三-视图设计" class="headerlink" title="三.视图设计"></a>三.视图设计</h4><ul>
 <li><p>导航栏设计</p>
-<p>​	在app.json中对window属性进行重新配置。更新后代码和效果如下：</p>
-<p><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817164743196.png" alt="image-20220817164743196" style="zoom:50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817164818680.png" alt="image-20220817164818680" style="zoom:50%;" /></p>
+<p>​	在app.json中对window属性进行重新配置，自定义导航栏标题和背景颜色。更新后代码和效果如下：</p>
+<p><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820092215671.png" alt="image-20220820092215671" style="zoom:50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820092228476.png" alt="image-20220820092228476" style="zoom:50%;" /></p>
 </li>
 <li><p>页面设计</p>
-<p>​	页面包含四个区域：地区选择器，温度和天气文字显示，天气图标显示，分多行显示其他天气信息。</p>
+<p>​	页面包含3个区域：视频播放器、弹幕发送区域、垂直排列的视频列表。</p>
 <ol>
-<li>整体容器设计：</li>
+<li><p>区域1（视频组件）设计：</p>
+<p>使用<video>组件实现一个视频播放器，WXML代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820092643045.png" alt="image-20220820092643045" style="zoom: 50%;" /></p>
+<p>其中controls属性用于显示播放&#x2F;暂停、音量等控制组件。</p>
+<p>WXSS代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093024009.png" alt="image-20220820093024009" style="zoom: 33%;" /></p>
+<p>此时视频播放区域出现在屏幕顶端：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093107107.png" alt="image-20220820093107107" style="zoom: 25%;" /></p>
+</li>
 </ol>
-<p>首先定义页面容器(<view>)，相关WXML代码片段：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817165020764.png" alt="image-20220817165020764" style="zoom:50%;" /></p>
-<p>容器样式设计，相关WXSS代码片段：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817165554839.png" alt="image-20220817165554839" style="zoom: 33%;" /></p>
-<p>​	2.区域1（地区选择器）设计：</p>
-<p>​		使用<picker>组件实现一个地区选择器，用户点击可切换其他城市。</p>
-<p>​	当前效果如图：</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817165104722.png" alt="image-20220817165104722" style="zoom: 33%;" />
+<p>​	2.区域2（弹幕区域）设计：</p>
+<p>​		使用<view>组件实现一个单行区域，包括文本输入框和发送按钮。</p>
+<p>WXML代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093353249.png" alt="image-20220820093353249" style="zoom: 50%;" /></p>
+<p>WXSS代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093422603.png" alt="image-20220820093422603" style="zoom:33%;" /></p>
+<p>当前效果如图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093450139.png" alt="image-20220820093450139" style="zoom: 25%;" /></p>
+<p>​	3.区域3（视频列表）设计：</p>
+<p>​		使用<view>组件实现一个可扩展的多行区域，每行包括一个播放图标和一个视频标题文本。</p>
+<p>先设计第一行效果，后续使用wx:for属性循环添加。</p>
+<p>WXML代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093739905.png" alt="image-20220820093739905" style="zoom:33%;" /></p>
+<p>WXSS代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093826485.png" alt="image-20220820093826485" style="zoom: 25%;" />        		当前效果如图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820093906564.png" alt="image-20220820093906564" style="zoom: 33%;" /></p>
+<h4 id="四-逻辑实现"><a href="#四-逻辑实现" class="headerlink" title="四.逻辑实现"></a>四.逻辑实现</h4></li>
+<li><p>更新播放列表</p>
+<p>​	在区域3对<view class='videoBar'>组件添加wx:for属性，改写为循环展示列表。</p>
+<p>WXML代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094124994.png" alt="image-20220820094124994" style="zoom: 33%;" /></p>
+<p>然后在JS文件的data属性中追加list数组，用于存放视频信息。其代码如下：</p>
+<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094219077.png" alt="image-20220820094219077" style="zoom: 25%;" />
 
-<p>​	3.区域2（文本）设计：</p>
-<p>​		使用<text>组件实现一个单行天气信息。</p>
-<p><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817165344839.png" alt="image-20220817165344839" style="zoom:50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817165730939.png" alt="image-20220817165730939" style="zoom:50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817200719143.png" alt="image-20220817200719143" style="zoom:33%;" /></p>
-<p>​	4.区域3（天气图标）设计：</p>
-<p>​		使用<image>组件展示当前城市的天气图标。</p>
-<p><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817200811618.png" alt="image-20220817200811618" style="zoom:50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817200738288.png" alt="image-20220817200738288" style="zoom: 33%;" /></p>
-<p>​	5.区域4（多行天气信息）设计：</p>
-<p>​		使用<view>组件展示多行天气信息。</p>
-<p>WXML代码片段如图：</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817200957034.png" alt="image-20220817200957034" style="zoom:50%;" />
-
-<p>WXSS代码片段如图：</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817201021201.png" alt="image-20220817201021201" style="zoom:50%;" />
-
-<p>运行结果：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817201106021.png" alt="image-20220817201106021" style="zoom:33%;" /></p>
-<h4 id="五-逻辑实现"><a href="#五-逻辑实现" class="headerlink" title="五.逻辑实现"></a>五.逻辑实现</h4></li>
-<li><p>更新省、市、区信息</p>
-<p>​    首先修改<picker>组件中“北京市”为，并为其追加自定义bindchange事件用于监听选项变化，在WXML代码片段修改：</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817201346173.png" alt="image-20220817201346173" style="zoom: 33%;" />
-
-<p>​     在JS文件的data中定义region为包含省市区3个项目的数组，并定义初始城市信息。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817213651214.png" alt="image-20220817213651214" style="zoom: 33%;" />
-
-<p>效果图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817213938697.png" alt="image-20220817213938697" style="zoom:33%;" /></p>
+<p>（我改了字体颜色）运行效果如图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094302386.png" alt="image-20220820094302386" style="zoom: 33%;" /></p>
 </li>
-<li><p>获取实况天气数据</p>
-<p>​	在JS文件中使用自定义函数getWeather进行实况天气数据的获取。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817213954367.png" alt="image-20220817213954367" style="zoom: 33%;" />
-
-<p>​    将上述函数在生命周期函数和自定义函数中分别进行调用，表示当页面加载和切换城市时均主动获取一次实况天气数据</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214022683.png" alt="image-20220817214022683" style="zoom:50%;" />
-
-<p>保存后运行在Console控制台得到第三方服务器发回的JSON数据：</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214159392.png" alt="image-20220817214159392" style="zoom: 67%;" />
-
-<p>然后更新getWeather函数，将包含实况天气数据的HeWeather6[0].now属性存到JS文件的data中。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214327871.png" alt="image-20220817214327871" style="zoom:50%;" />
-
-<p>运行后在AppData面板得到已被记录的天气数据：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214409855.png" alt="image-20220817214409855" style="zoom: 67%;" /></p>
+<li><p>点击播放视频</p>
+<p>​	在区域3对<view class='videoBar'>组件添加data-url属性和bindtap属性。其中data-url用于记录每行视频对应的播放地址，bindtap用于触发点击事件。</p>
+<p>WXML代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094456714.png" alt="image-20220820094456714" style="zoom: 33%;" /></p>
+<p>然后在JS文件的onLoad函数中创建视频上下文，用于控制视频的播放和停止。其代码如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094600982.png" alt="image-20220820094600982" style="zoom:33%;" /></p>
+<p>接着添加自定义函数playVideo，JS代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094734072.png" alt="image-20220820094734072" style="zoom: 33%;" /></p>
+<p>运行效果如图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094659584.png" alt="image-20220820094659584" style="zoom: 25%;" /></p>
 </li>
-<li><p>更新页面天气信息</p>
-<p>  将WXML页面上所有临时数据都替换为形式。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214527191.png" alt="image-20220817214527191" style="zoom: 50%;" />
-
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214537423.png" alt="image-20220817214537423" style="zoom:50%;" />
-
-<p>在JS文件的data中为now规定初始数据，在获取到实际数据前可以临时显示这些数据。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214619690.png" alt="image-20220817214619690" style="zoom:50%;" /></li>
+<li><p>发送弹幕</p>
+<p>​	在区域1对<video>组件添加enable-danmu和danmu-btn属性，用于允许发送弹幕和显示“发送弹幕”按钮。然后在区域2为文本输入框追加bindinput属性，用于获取弹幕文本内容；为按钮追加bindtap属性，用于触发点击事件。</p>
+<p>WXML代码片段如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820094905318.png" alt="image-20220820094905318" style="zoom: 33%;" /></p>
+<p>对应JS代码片段修改如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095039394.png" alt="image-20220820095039394" style="zoom: 50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095056685.png" alt="image-20220820095056685" style="zoom: 33%;" /></p>
+</li>
 </ul>
-<h2 id="三、程序运行结果"><a href="#三、程序运行结果" class="headerlink" title="三、程序运行结果"></a>三、程序运行结果</h2><p>程序的最终运行结果及截图。</p>
-<p><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214634775.png" alt="image-20220817214634775" style="zoom:50%;" /><img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817214642713.png" alt="image-20220817214642713" style="zoom:50%;" /></p>
+<p>此时可以发出红色文本的弹幕，运行效果如图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095152926.png" alt="image-20220820095152926" style="zoom:50%;" /></p>
+<p>若想发出随机颜色的弹幕内容，可以在JS文件中追加自定义函数getRandomColor。代码如下：</p>
+<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095414314.png" alt="image-20220820095414314" style="zoom: 50%;" />
+
+<p>上述代码可以随机生成一个十六进制的颜色，将其在原先需要color属性的地方调用即可实现彩色弹幕效果，JS代码片段修改如下：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095521879.png" alt="image-20220820095521879" style="zoom:33%;" /></p>
+<p>此时可以发出彩色文本的弹幕，运行效果如图：<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095557613.png" alt="image-20220820095557613" style="zoom: 33%;" /></p>
+<h2 id="三、程序运行结果"><a href="#三、程序运行结果" class="headerlink" title="三、程序运行结果"></a>三、程序运行结果</h2><p>​	小程序为视频播放程序，运行后点击下方按钮可播放视频，然后在中间文本框输入文字可发送随机颜色的弹幕。</p>
+<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220820095613018.png" alt="image-20220820095613018" style="zoom:50%;" />
+
+
+
 <h2 id="四、问题总结与体会"><a href="#四、问题总结与体会" class="headerlink" title="四、问题总结与体会"></a>四、问题总结与体会</h2><p><strong>实验中遇到的问题和解决方法：</strong></p>
 <ul>
-<li>在进行区域4多行天气信息设计时，由于添加代码过多，同时需要对齐的<view></view>形式的语句太多，在对照着实验手册添加完后运行出现报错。通过检查后发现是因为我把其中一个&lt;符号没有打上去，导致格式不对齐出现报错。</li>
-<li>在获取实况天气数据时，我在对照实验手册添加完代码后保存时出现数据不允许读取的报错，故而虽出现了HeWeather6:Array(1)，但是它里面并没有包括具体信息内容。经过多次更改域名的尝试并查找相关资料，我发现是我申请的key存在问题，他没有对应信息的访问权限，于是我更换了这个key，于是在控制台成功导出了相关信息。</li>
+<li><p>在逻辑实现部分的更新播放列表操作中，点击视频播放后不能成功播放视频。</p>
+<p>解决：通过对代码的检查，我发现原因是我在区域1视频播放器中未进行controls控制组件属性更改，故我加上controls src&#x3D;’‘后成功播放出了视频</p>
+</li>
+<li><p>在发送弹幕的第一步，即试图发送红色弹幕时，我点击发送按钮并不能成功显示出来红色弹幕。</p>
+<p>解决：通过检查代码，我发现原因是我在区域1视频播放器中加入新的enable-danmu和danmu-btn属性后没有更改controls的位置，它还在src前面，故通过对照实验手册上的代码更正此处controls的位置之后，我成功发生出了红色弹幕。</p>
+</li>
+<li><p>在发生弹幕的最后，即试图发生随机生成颜色的彩色代码时，添加的函数代码片段出现报错。</p>
+<p>解决：通过仔细阅读实验文档并查询相关自定义函数的知识，我发现是因为我把自定义的getRandomColor()函数放在了Page()函数里面导致的报错，故我更改了此处代码，把自定义的函数放在page()函数之外之后没有了报错，并可以成功发送出彩色弹幕。</p>
+</li>
 </ul>
 <p><strong>心得体会：</strong></p>
-<p>​       通过本次实验，我对于微信小程序的创建有了进一步的了解，在进行天气查询小程序实现的过程中我基本掌握了请求外部接口API来获取天气数据并将其更新并显示的方法，了解了wx.request接口的用法，同时在不断更改的这个过程中对于微信小程序开发中语言使用的语法结构和文件间的关系有了更深刻地了解。</p>
+<p>​	通过本次实验，我对微信小程序的创建有了更深地了解。在进行本次视频播放小程序的实现过程中，我学会了在微信小程序中进行多个视频播放的操作，在视频组件设计的过程中，我学会了<video>组件的使用，可在其中通过controls属性进行控制组件的显示以及允许弹幕发送的属性添加。除此之外，我还学到了若进行多行同样效果的设计时，可以先设计第一行效果，后续使用wx:for属性改写为循环来添加所有内容。在实验过程中出现了一些由于粗心与对小程序语言编写的不熟悉而导致的问题，通过查阅相关资料进行更正的过程中，我对小程序的编写有了更深地理解，并对其文件结构、语法关系等有了更熟悉的了解。</p>
 <p><strong>课程安排建议：</strong>课堂安排很好，教学和实验内容相结合。</p>
 
                 
@@ -568,7 +562,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a target="_blank" rel="noopener" href="http://yuyujiang16.github.io`/2022/08/17/%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2%E5%B0%8F%E7%A8%8B%E5%BA%8F/">http://yuyujiang16.github.io`/2022/08/17/%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2%E5%B0%8F%E7%A8%8B%E5%BA%8F/</a>
+                    <a target="_blank" rel="noopener" href="http://yuyujiang16.github.io`/2022/08/20/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%B0%8F%E7%A8%8B%E5%BA%8F/">http://yuyujiang16.github.io`/2022/08/20/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%B0%8F%E7%A8%8B%E5%BA%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -684,9 +678,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/08/20/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
                     <div class="card-image">
@@ -704,9 +699,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -715,6 +710,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -725,13 +721,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                <a href="/2022/08/17/%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="我的第一个微信小程序">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="天气查询小程序">
                         
-                        <span class="card-title">我的第一个微信小程序</span>
+                        <span class="card-title">天气查询小程序</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
