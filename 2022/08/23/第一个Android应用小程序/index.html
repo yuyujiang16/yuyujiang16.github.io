@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="news, 鱼鱼酱的小窝">
+    <meta name="keywords" content="第一个Android应用小程序, 鱼鱼酱的小窝">
     <meta name="description" content="2022年夏季《移动软件开发》实验报告姓名：任嘉怡  学号：20020007058
 
 
@@ -20,9 +20,7 @@
 
 
 实验名称？
-实验4：高校新闻网
-
-">
+实验5：第一个Andr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -34,7 +32,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>news | 鱼鱼酱的小窝</title>
+    <title>第一个Android应用小程序 | 鱼鱼酱的小窝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -351,12 +349,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">news</h1>
+                    <h1 class="description center-align post-title">第一个Android应用小程序</h1>
                 </div>
             </div>
         </div>
@@ -392,7 +390,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-08-22
+                    2022-08-23
                 </div>
                 
 
@@ -428,7 +426,7 @@
 </tr>
 <tr>
 <td>实验名称？</td>
-<td>实验4：高校新闻网</td>
+<td>实验5：第一个Android应用小程序</td>
 </tr>
 <tr>
 <td>博客地址？</td>
@@ -436,169 +434,90 @@
 </tr>
 <tr>
 <td>Github仓库地址？</td>
-<td><a target="_blank" rel="noopener" href="https://github.com/yuyujiang16/news.git">https://github.com/yuyujiang16/news.git</a></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/yuyujiang16/first-android.git">https://github.com/yuyujiang16/first-android.git</a></td>
 </tr>
 </tbody></table>
 <p>（备注：将实验报告发布在博客、代码公开至 github 是 <strong>加分项</strong>，不是必须做的）</p>
-<p>代码公开至 github：</p>
-<img src="/2022/08/22/news/image-20220822215044487.jpg" class="" title="image-20220822215044487">
-
-<img src="../../../Desktop/移动软件开发/4/image-20220822215044487.png" alt="image-20220822215044487" style="zoom: 33%;" />
-
-
-
-<h2 id="一、实验目标"><a href="#一、实验目标" class="headerlink" title="一、实验目标"></a><strong>一、实验目标</strong></h2><p>综合所学知识创建完整的前端新闻小程序项目；</p>
-<p>能够在开发过程中熟练掌握真机预览、调试等操作。</p>
-<h2 id="二、实验步骤"><a href="#二、实验步骤" class="headerlink" title="二、实验步骤"></a>二、实验步骤</h2><h4 id="一-项目创建"><a href="#一-项目创建" class="headerlink" title="一.项目创建"></a>一.项目创建</h4><p>​	本项目共需要3个页面：首页、新闻页和个人中心页，其中首页和个人中心页需要以tabBar形式展示，可以点击tab图标互相切换。</p>
-<p>​	首页功能需求如下：（1）首页需要包含幻灯片播放效果和新闻列表；（2）幻灯片至少要有3幅图片自动播放；（3）点击新闻列表可以打开新闻全文。</p>
-<p>​	新闻页功能需求如下：（1）阅读新闻全文的页面需要显示新闻标题、图片、正文和日期；（2）允许 点击按钮将当前阅读的新闻添加到本地收藏夹中；（3）已经收藏过的新闻也可以点击按钮取消收藏。</p>
-<p>​	个人中心页功能需求如下：（1）未登录状态下显示登录按钮，用户点击以后可以显示微信头像和昵称。（2）登录后读取当前用户的收藏夹，展示收藏的新闻列表。（3）收藏夹中的新闻可以直接点击查看内容。（4）未登录状态下收藏夹显示为空。</p>
-<h4 id="二-页面配置"><a href="#二-页面配置" class="headerlink" title="二.页面配置"></a>二.页面配置</h4><ul>
-<li><p>创建页面文件</p>
-<p>​	将app.json文件中pages属性中“pages&#x2F;logs&#x2F;logs”删除，追加pages&#x2F;detail&#x2F;detail和pages&#x2F;my&#x2F;my，保存修改，然后会在pages文件夹下自动生成detail和my目录。</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821100353750.png" alt="image-20220821100353750" style="zoom: 50%;" />
-</li>
-<li><p>删除和修改文件</p>
-<p>​	删除utils文件夹及其内容；<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105717538.png" alt="image-20220817105717538" style="zoom:33%;" /></p>
-<p>​	删除pages文件夹下logs目录及其内容；<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105726717.png" alt="image-20220817105726717" style="zoom:33%;" /></p>
-<p>​	删除index.wxml和index.wxss中全部代码；<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105738454.png" alt="image-20220817105738454" style="zoom:33%;" /></p>
-<p>​	删除index.js中全部代码，并输入关键词“page”找到函数选项使其自动补全函数；<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105748404.png" alt="image-20220817105748404" style="zoom:33%;" /></p>
-<p>​	删除app.wxss中全部代码；<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105756980.png" alt="image-20220817105756980" style="zoom:33%;" /></p>
-<p>​	删除app.js中全部代码，并输入关键词“app”找到函数选项使其自动补全函数。</p>
-<img src="C:\Users\小怡宝贝\AppData\Roaming\Typora\typora-user-images\image-20220817105806177.png" alt="image-20220817105806177" style="zoom:33%;" />
-</li>
-<li><p>创建其他文件</p>
-<p>​	创建images文件夹用于存放图片素材，创建utils用于存放公共JS文件。此时目录结构如图：<img src="../../../Desktop/移动软件开发/4/image-20220821100535435.png" alt="image-20220821100535435" style="zoom:33%;" /></p>
-</li>
-</ul>
-<h4 id="三-视图设计"><a href="#三-视图设计" class="headerlink" title="三.视图设计"></a>三.视图设计</h4><ul>
-<li><p>导航栏设计</p>
-<p>​	在app.json中对window属性进行重新配置，自定义导航栏标题和背景颜色。更新后代码和效果如下：</p>
-<p><img src="../../../Desktop/移动软件开发/4/image-20220821100616078.png" alt="image-20220821100616078" style="zoom:50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220821100627336.png" alt="image-20220821100627336" style="zoom:50%;" /></p>
-</li>
-<li><p>tabBar设计</p>
-<p>在app.json中追加tabBar的相关属性代码，更改后代码以及运行效果如下，此时可切换首页和个人中心页：</p>
-<p><img src="../../../Desktop/移动软件开发/4/image-20220821100732014.png" alt="image-20220821100732014" style="zoom: 33%;" /><img src="../../../Desktop/移动软件开发/4/image-20220821100757162.png" alt="image-20220821100757162" style="zoom:67%;" /></p>
-</li>
-<li><p>页面设计</p>
-<ol>
-<li><p>首页设计：</p>
-<p>​	页面包含两部分内容，即幻灯片滚动和新闻列表。幻灯片使用<swiper>组件，新闻列表使用<view>容器，内部使用数组循环。</p>
-<p>WXML代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220821101119032.png" alt="image-20220821101119032" style="zoom: 33%;" /></p>
-<p>WXSS代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220821101151624.png" alt="image-20220821101151624" style="zoom:33%;" /></p>
-<p>为了进行布局和样式效果预览，在JS文件的data中临时录入几个测试数据。</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821101321226.png" alt="image-20220821101321226" style="zoom:33%;" />
-
-<p>运行效果如图，此时可以显示幻灯片播放和一条临时新闻。</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821101407595.png" alt="image-20220821101407595" style="zoom:33%;" /></li>
-</ol>
-<p>​	2.个人中心页设计：</p>
-<p>​		个人中心页包含两个板块，即登录面板和我的收藏。登录面板显示用户微信头像和昵称，我的收藏用于显示收藏在本地的新闻列表。使用<view>组件进行整体布局。</p>
-<p>WXML代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220821101829220.png" alt="image-20220821101829220" style="zoom:33%;" /></p>
-<p>WXSS代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220821102144424.png" alt="image-20220821102144424" style="zoom:33%;" /></p>
-<p>由于新闻列表样式与首页完全相同，没必要重复样式代码，否则会造成冗余，故将index.wxss中新闻列表样式的相关代码挪到app.wxss中公共使用。</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821102312448.png" alt="image-20220821102312448" style="zoom: 33%;" />
-
-<p>为了进行布局和样式效果预览，在JS文件data中临时录入测试数据（my.js）:<img src="../../../Desktop/移动软件开发/4/image-20220821102414455.png" alt="image-20220821102414455" style="zoom:33%;" /></p>
-<p>当前效果如图：<img src="../../../Desktop/移动软件开发/4/image-20220821102436035.png" alt="image-20220821102436035" style="zoom: 33%;" /></p>
-<p>​	3.新闻页设计：</p>
-<p>​		用户点击首页的新闻列表，然后在新窗口中打开新闻页。新闻页包括新闻标题、图片、正文和日期。</p>
-<p>​		由于暂时没有做点击跳转的逻辑设计，故找到“普通编译”选择“添加编译模式”，追加对detail页面的直接浏览效果。</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821102704913.png" alt="image-20220821102704913" style="zoom:33%;" />
-
-<p>​		使用<view>组件进行整体布局。</p>
-<p>WXML代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220821102957244.png" alt="image-20220821102957244" style="zoom:33%;" /></p>
-<p>WXSS代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220821103023332.png" alt="image-20220821103023332" style="zoom: 33%;" />        </p>
-<p>在JS中临时录入测试数据：<img src="../../../Desktop/移动软件开发/4/image-20220821103058410.png" alt="image-20220821103058410" style="zoom: 33%;" /></p>
-<p>当前效果如图：<img src="../../../Desktop/移动软件开发/4/image-20220821103205292.png" alt="image-20220821103205292" style="zoom:33%;" /></p>
-<h4 id="四-逻辑实现"><a href="#四-逻辑实现" class="headerlink" title="四.逻辑实现"></a>四.逻辑实现</h4></li>
-<li><p>公共逻辑</p>
-<p>​	将获取的数据放在公共JS文件（common.js）中，代码片段如下：</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821103443377.png" alt="image-20220821103443377" style="zoom:33%;" />
-
-<p>接下来在其中添加自定义函数getNewsList和getNewsDetail，分别用于获取新闻列表信息和指定ID的新闻正文内容。代码片段如下：</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821170150317.png" alt="image-20220821170150317" style="zoom:33%;" />
-
-<p>最后在common.js中使用module.exports语句暴露函数出口，代码如下：<img src="../../../Desktop/移动软件开发/4/image-20220821170236726.png" alt="image-20220821170236726" style="zoom:50%;" /></p>
-<p>至此完成公共逻辑处理的部分。然后需要在各页面的JS文件顶端引用公共JS文件，引用代码如下：</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220821170712133.png" alt="image-20220821170712133" style="zoom:50%;" />
-</li>
-<li><p>首页逻辑</p>
-<p>1.新闻列表展示</p>
-<p>​	新闻列表展示使用了，因此需要在页面JS文件的onLoad函数中获取新闻列表，并更新到data属性的newsList参数中。</p>
-<p>相关JS代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220822193947357.png" alt="image-20220822193947357" style="zoom: 50%;" /></p>
-<p>​    </p>
-<p>2.点击跳转新闻内容</p>
-<p>​	首先为新闻列表项目添加点击事件，为<text>组件添加了自定义触摸事件函数goToDetail，并使用data-id属性携带了新闻ID编号。相关WXML代码片段修改如下：</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220822194200640.png" alt="image-20220822194200640" style="zoom: 50%;" />
-
-<p>​	在对应的detail.js文件中添加goToDetail函数的内容，代码片段如下：</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220822194412041.png" alt="image-20220822194412041" style="zoom:50%;" />
-
-<p>​	此时已经可以点击跳转到detail页面，并成功携带新闻ID数据，但是仍需在detail页面进行携带数据的接收处理才可显示正确的新闻内容。</p>
-</li>
-<li><p>新闻页逻辑</p>
-<p>1.显示对应新闻</p>
-<p>​	在新闻页接受ID编号，并查询对应的新闻内容。相关JS代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220822194529396.png" alt="image-20220822194529396" style="zoom: 50%;" />此时重新从首页点击新闻跳转到新闻页可显示标题对应的新闻内容：<img src="../../../Desktop/移动软件开发/4/image-20220822194945534.png" alt="image-20220822194945534" style="zoom:50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822194617112.png" alt="image-20220822194617112" style="zoom:50%;" /></p>
-</li>
-</ul>
-<p>2.添加&#x2F;取消新闻收藏</p>
-<p>​	修改detail.wxml代码，追加两个<button>组件作为添加&#x2F;取消收藏新闻的按钮，并使用wx:if和wx:else属性使其每次只存在一个。</p>
-<p>WXML代码片段添加如下：<img src="../../../Desktop/移动软件开发/4/image-20220822195037713.png" alt="image-20220822195037713" style="zoom: 50%;" /></p>
-<p>对应WXSS代码片段添加如下：<img src="../../../Desktop/移动软件开发/4/image-20220822195108671.png" alt="image-20220822195108671" style="zoom:50%;" /></p>
-<p>对应JS中的onLoad函数代码片段修改如下：<img src="../../../Desktop/移动软件开发/4/image-20220822195144176.png" alt="image-20220822195144176" style="zoom: 33%;" /></p>
-<p>继续在detail.js文件中追加addFavorites和cancelFavorites函数，用于点击添加&#x2F;取消新闻收藏。</p>
-<p>对应JS中函数代码片段修改如下：<img src="../../../Desktop/移动软件开发/4/image-20220822195330482.png" alt="image-20220822195330482" style="zoom: 50%;" /></p>
-<p>现在从首页开始预览，选择其中任意一篇新闻进入detail页面，并尝试点击按钮收藏和取消收藏。页面效果如图：</p>
-<p><img src="../../../Desktop/移动软件开发/4/image-20220822202639770.png" alt="image-20220822202639770" style="zoom: 50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822202648613.png" alt="image-20220822202648613" style="zoom:50%;" /></p>
-<p><img src="../../../Desktop/移动软件开发/4/image-20220822203416745.png" alt="image-20220822203416745" style="zoom:50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822203428897.png" alt="image-20220822203428897" style="zoom:50%;" /></p>
+<p>代码公开至github:<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823102700666.jpg" class="" title="image-20220823102700666"><img src="../../../Desktop/移动软件开发/5/image-20220823102700666.png" alt="image-20220823102700666" style="zoom: 33%;" /></p>
+<h2 id="一、实验目标"><a href="#一、实验目标" class="headerlink" title="一、实验目标"></a><strong>一、实验目标</strong></h2><p>​	模仿微信“发现”页创建列表布局，学习使用Textview imageview、LinearLayout</p>
+<h2 id="二、实验步骤"><a href="#二、实验步骤" class="headerlink" title="二、实验步骤"></a>二、实验步骤</h2><p>​	实验模仿微信“发现”页创建列表布局，页面上主要包含5组列表，每组列表包含1-2个列表项。具体内容如下：</p>
+<p> • 列表组1：“朋友圈”单行列表项；<br> • 列表组2：“扫一扫”和“摇一摇”两行列表项；<br> • 列表组3：“看一看”和“搜一搜”两行列表项；<br> • 列表组4：“购物”和“游戏”两行列表项；<br> • 列表组5：“小程序”单行列表项。</p>
+<p>故实验步骤为：</p>
 <ul>
-<li><p>个人中心页逻辑</p>
-<p>1.获取微信用户信息</p>
-<p>​	修改my.wxml代码，追加<button>组件作为登录按钮，并使用wx:if和wx:else属性让未登录时只显示按钮，登录后只显示头像和昵称。</p>
-<p>WXML代码片段修改如下：<img src="../../../Desktop/移动软件开发/4/image-20220822203651160.png" alt="image-20220822203651160" style="zoom:50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822203712677.png" alt="image-20220822203712677" style="zoom:50%;" /></p>
-</li>
-</ul>
-<p>在my.wxml页面修改<button>组件代码，为其追加获取用户信息事件，代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220822204727607.png" alt="image-20220822204727607" style="zoom: 50%;" /></p>
-<p>在my.js文件的Page()内部追加getMyInfo函数，代码片段如下：<img src="../../../Desktop/移动软件开发/4/image-20220822204819870.png" alt="image-20220822204819870" style="zoom:50%;" /></p>
-<p>保存后预览项目，单击按钮后控制台输出用户信息数据：<img src="../../../Desktop/移动软件开发/4/image-20220822204947706.png" alt="image-20220822204947706" style="zoom:50%;" /></p>
-<p>修改my.js文件中getMyInfo函数代码，将信息更新到动态数据上，代码片段如下(修改后)：</p>
-<p><img src="../../../Desktop/移动软件开发/4/image-20220822210601562.png" alt="image-20220822210601562" style="zoom:50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822205259768.png" alt="image-20220822205259768" style="zoom:50%;" /></p>
-<p>此时完成登录功能如图：<img src="../../../Desktop/移动软件开发/4/image-20220822205138567.png" alt="image-20220822205138567" style="zoom: 50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822205154810.png" alt="image-20220822205154810" style="zoom:50%;" /></p>
-<p>​	2.获取收藏列表</p>
-<p>修改my.wxml使”我的收藏“后面数字更改为动态数据效果：<img src="../../../Desktop/移动软件开发/4/image-20220822205316446.png" alt="image-20220822205316446" style="zoom:50%;" /></p>
-<p>对应JS中data属性代码片段修改如下：<img src="../../../Desktop/移动软件开发/4/image-20220822205352424.png" alt="image-20220822205352424" style="zoom:50%;" /></p>
-<p>继续在detail.js文件中追加getMyFavorites函数，用于展示真正的新闻收藏列表。</p>
-<img src="../../../Desktop/移动软件开发/4/image-20220822205540659.png" alt="image-20220822205540659" style="zoom:50%;" />
+<li><p>首先设计一个外部总垂直布局,包含所有的列表组</p>
+<p>​	创建父布局，对其进行设置背景色，并设置其垂直方向。</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823095731973.jpg" class="" title="image-20220823095731973">
 
-<p>修改my.js中的getMyInfo函数，为其追加关于getMyFavorites函数的调用：<img src="../../../Desktop/移动软件开发/4/image-20220822205747457.png" alt="image-20220822205747457" style="zoom:50%;" /></p>
-<p>现在从首页开始预览，选择其中任意两篇新闻收藏，然后退出切换到个人中心页，登录后查看收藏效果，此时页面效果如图：<img src="../../../Desktop/移动软件开发/4/image-20220822205853030.png" alt="image-20220822205853030" style="zoom: 33%;" /></p>
-<p>修改my.js中的onShow函数，判断如果是登录状态就刷新一下收藏状态：<img src="../../../Desktop/移动软件开发/4/image-20220822205951048.png" alt="image-20220822205951048" style="zoom:50%;" /></p>
-<p>3.浏览收藏的新闻</p>
-<p>​	修改my.wxml收藏列表的代码，为<text>组件添加了自定义触摸事件函数goToDetail，并使用data-id属性携带了新闻ID编号，如下：<img src="../../../Desktop/移动软件开发/4/image-20220822210109872.png" alt="image-20220822210109872" style="zoom: 50%;" /></p>
-<p>​	然后在对应my.js文件中添加goToDetail函数内容如下：<img src="../../../Desktop/移动软件开发/4/image-20220822210309886.png" alt="image-20220822210309886" style="zoom:50%;" /></p>
-<p>运行效果如图：<img src="../../../Desktop/移动软件开发/4/image-20220822210409434.png" alt="image-20220822210409434" style="zoom: 50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822210420161.png" alt="image-20220822210420161" style="zoom:50%;" /></p>
-<ul>
-<li><p>清除临时数据</p>
-<p>需要清除的数据如下：<img src="../../../Desktop/移动软件开发/4/image-20220822210504679.png" alt="image-20220822210504679" style="zoom:33%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822210511379.png" alt="image-20220822210511379" style="zoom:33%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822210538062.png" alt="image-20220822210538062" style="zoom:33%;" /></p>
-<p>此时实验全部完成。</p>
+<img src="../../../Desktop/移动软件开发/5/image-20220823095731973.png" alt="image-20220823095731973" style="zoom: 67%;" />
+
+<p>​	后面出现报错后补上设置垂直方向的一行代码：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823095748877.jpg" class="" title="image-20220823095748877">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823095748877.png" alt="image-20220823095748877" style="zoom: 80%;" />
+</li>
+<li><p>写五个LinearLayout来构建这五个列表组</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823095844208.jpg" class="" title="image-20220823095844208">
+
+<p>​	<img src="../../../Desktop/移动软件开发/5/image-20220823095844208.png" alt="image-20220823095844208" style="zoom:50%;" /></p>
+</li>
+<li><p>每个列表组的单独构建</p>
+<p>1.包含一个列表项的列表组（PPT上的朋友圈列表组搭建）：</p>
+<p>​	首先设置宽高、背景色、垂直方向：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823100031807.jpg" class="" title="image-20220823100031807"><img src="../../../Desktop/移动软件开发/5/image-20220823100031807.png" alt="image-20220823100031807" style="zoom: 50%;" />
+
+<p>​       然后创建列表组中第一个图标，包括其宽高、背景色、 与左边距离和设置居中；创建汉字，包括其宽高、字体颜色、样式、大小、与左侧距离和字体居中。</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823100309770.jpg" class="" title="image-20220823100309770">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823100309770.png" alt="image-20220823100309770" style="zoom:50%;" />
+
+<p>​      最后创建列表组右边的箭头，设置其宽高、背景、水平居中与距右边距离。</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823100747533.jpg" class="" title="image-20220823100747533">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823100747533.png" alt="image-20220823100747533" style="zoom:67%;" />
+
+<p>效果图：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823100826940.jpg" class="" title="image-20220823100826940">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823100826940.png" alt="image-20220823100826940" style="zoom: 50%;" />
+
+<p>2.包含两个列表项的列表组：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823095934495.jpg" class="" title="image-20220823095934495"><img src="../../../Desktop/移动软件开发/5/image-20220823095934495.png" alt="image-20220823095934495" style="zoom: 67%;" />
+
+<p>其中一个列表项的创建如图：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823100945997.jpg" class="" title="image-20220823100945997">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823100945997.png" alt="image-20220823100945997" style="zoom:50%;" />
+</li>
+<li><p>列表组之间的间隔样式搭建</p>
+<p>​	使用android:layout_marginTop语句调节条框之间的间距，并辅以背景色的设置来进行间隔的显示。一些具体内容在问题总结部分说明</p>
 </li>
 </ul>
-<h2 id="三、程序运行结果"><a href="#三、程序运行结果" class="headerlink" title="三、程序运行结果"></a>三、程序运行结果</h2><p><img src="../../../Desktop/移动软件开发/4/image-20220822210409434.png" alt="image-20220822210409434" style="zoom: 50%;" /><img src="../../../Desktop/移动软件开发/4/image-20220822210420161.png" alt="image-20220822210420161" style="zoom:50%;" /></p>
+<h2 id="三、程序运行结果"><a href="#三、程序运行结果" class="headerlink" title="三、程序运行结果"></a>三、程序运行结果</h2><p>同步显示效果：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823101110291.jpg" class="" title="image-20220823101110291">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823101110291.png" alt="image-20220823101110291" style="zoom: 67%;" />
+
+<p>连接到手机上效果：</p>
+<img src="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/image-20220823101129912.jpg" class="" title="image-20220823101129912">
+
+<img src="../../../Desktop/移动软件开发/5/image-20220823101129912.png" alt="image-20220823101129912" style="zoom: 25%;" />
+
 <h2 id="四、问题总结与体会"><a href="#四、问题总结与体会" class="headerlink" title="四、问题总结与体会"></a>四、问题总结与体会</h2><h5 id="实验中遇到的问题和解决方法："><a href="#实验中遇到的问题和解决方法：" class="headerlink" title="实验中遇到的问题和解决方法："></a>实验中遇到的问题和解决方法：</h5><ul>
-<li><p>在逻辑实现部分的添加&#x2F;取消新闻收藏操作中，点击按钮不能成功进行对应的操作。</p>
-<p>解决：通过对代码的检查，我发现原因是我在wxml代码中对cancelFavorites调用时，在js文件中的对应函数名错误，导致二者不能成功联系而不能实现功能，故更改后成功实现新闻的添加和取消操作。</p>
+<li><p>不同列表组间隔问题</p>
+<p>解决：设置五个列表组，每个组间的间隔通过给下一个组列表组加上android:layout_marginTop&#x3D;”20dp”，并把背景设置为灰色来实现。</p>
 </li>
-<li><p>在个人中心页逻辑部分的获取微信用户信息功能实现时，我点击登录后未能成功获取到我的微信信息，而是出现了默认的“微信用户”信息。</p>
-<p>解决：通过查询相关资料和第一次实验中获取微信用户信息内容的代码，我发现原因是实验手册中原有的getMyInfo函数的获取方式现在已不能成功获取，而需要使用getUserProfile方式来获取用户信息，与此同时在onLoad函数中添加相应函数的判断。</p>
-<p>但是当我更改完后只能出现我的微信头像，未出现我的微信昵称，经过检查代码后发现是变量名未更改，需要把name更改为nickName，成功完成了我的微信信息获取。</p>
+<li><p>同一个列表组中不同列表项中间加一个横线作为间隔问题</p>
+<p>解决：给此列表组设置背景为灰色，而列表项的颜色设置为白色，给下面的列表项添加android:layout_marginTop&#x3D;”1dp”，故显示出横线为间隔。</p>
 </li>
-<li><p>在个人中心页逻辑部分的获取收藏列表时，我发现收藏后数字始终为0，不会随收藏数目改变而改变</p>
-<p>解决：通过仔细检查相关代码内容，我发现是在wxml中将错写成了0，最终更改后成功实现了数字的动态数据效果。</p>
+<li><p>编写完所有程序后出现报错Wrong orientation</p>
+<p>解决：通过查询相关资料后得知是整体布局的问题，因为此页面为垂直布局，故在最开始的父布局中加上android:orientation &#x3D; “vertical”解决了问题。</p>
+</li>
+<li><p>刚开始编写程序时不知道如何在一个列表组中添加多个列表项</p>
+<p>解决：通过询问老师后得知列表项的添加也需要LinearLayout来实现，即进行其嵌套，并扩大列表组的高来实现一个列表组中包含多个列表项。</p>
 </li>
 </ul>
 <p><strong>心得体会：</strong></p>
-<p>​	通过本次实验，我对微信小程序的创建有了更深地了解。在进行本次高校新闻网小程序的实现过程中，我学会了在微信小程序中进行新闻信息的导入与显示的功能实现，并学会了对首页、新闻内容页和个人页分别进行设计与联系的实现，还有通过点击按钮的动态操作进行对本地缓存的添加和删除。本次实验的小程序的结构构建和页面设计的内容和前三个实验内容相比，难度有所提高，故而对我们对实验的理解和编写代码结构的过程有了更高的要求，而粗心导致的函数名称在定义和调用时的不统一、某个变量名的错误总会导致错误的出现。</p>
+<p>​	 在本次实验中，我首次接触到了安卓应用程序的开发，进行了java环境的搭建以及开发软件的使用，在实验过程中通过不断查询资料以及老师的讲解，我学会了Textview imageview、LinearLayout在代码结构之中的使用以及列表组以及其中列表项之间间隔的设置。我发现在安卓应用程序页面设计中，同一类型部件设计的代码十分相似，但是需要我们进行对参数的仔细设置来达到页面需要的效果，除此之外，整体父布局的设置以及列表组父布局的设置的参数也是需要我们考虑清楚并注意的内容。</p>
 <p><strong>课程安排建议：</strong>课堂安排很好，教学和实验内容相结合。</p>
 
                 
@@ -626,7 +545,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a target="_blank" rel="noopener" href="http://yuyujiang16.github.io`/2022/08/22/news/">http://yuyujiang16.github.io`/2022/08/22/news/</a>
+                    <a target="_blank" rel="noopener" href="http://yuyujiang16.github.io`/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/">http://yuyujiang16.github.io`/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -742,9 +661,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/08/23/%E7%AC%AC%E4%B8%80%E4%B8%AAAndroid%E5%BA%94%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
                     <div class="card-image">
@@ -762,9 +682,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -773,6 +693,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -783,13 +704,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/20/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                <a href="/2022/08/22/news/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="视频播放小程序">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="news">
                         
-                        <span class="card-title">视频播放小程序</span>
+                        <span class="card-title">news</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -800,7 +721,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-22
                             </span>
                         <span class="publish-author">
                             
